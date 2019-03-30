@@ -1,0 +1,83 @@
+form h3{
+    border-bottom: 1px black solid;
+}
+form div{
+    height: fit-content;
+    padding-left: 5px;
+}
+form{
+    width: 100%;
+    height: 100vh;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+form div:last-child{
+    flex-basis: 100%;
+    text-align: center;
+}
+form div:last-child input, form div:last-child button{
+    display: inline-block;
+    min-width: 10%;
+    max-width: fit-content;
+    width: 15%;
+    margin-left: auto;
+    margin-right: auto;
+}
+form div:first-child input:not(#short){
+    display: inline-block !important;
+    width: 100px !important;
+}
+@media only screen and (max-width: 1080px) {
+    form, form div{
+        display: block;
+    }
+}  
+label{
+    float: left;
+    margin-right: 5px;
+}
+#qrcode{
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+form .btn{
+    width: 90%;
+    text-align: center;
+    margin-left: 5px;
+    font-family: monospace;
+    font-size: 17px;
+    padding: 4px 8px;
+}
+
+#dataModal .modal-body{
+    overflow-x: scroll;
+}
+#data th, #data td{
+    width: 70px !important;
+}
+#data input{
+    border-width: 0 !important;
+    margin: none;
+    padding: none !important;
+}
+#scanDialog{
+    width: fit-content !important;
+}
+#dataModal .modal-dialog{
+    width: 75% !important;
+}
+#matchName{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+#qrTitle{
+    width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}

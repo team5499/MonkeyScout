@@ -1,0 +1,55 @@
+body, html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Helvetica Neue', 'Calibri', Arial, sans-serif;
+    height: 100%;
+}
+body {
+    background: #263238;
+    display: flex;
+    align-items: stretch;
+    justify-content: stretch;
+    height: 100%;
+}
+.sidebar {
+    background: #eceff1;
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow: auto;
+}
+.sidebar h2 {
+    font-weight: normal;
+    font-size: 1.0rem;
+    background: #607d8b;
+    color: #fff;
+    padding: 10px;
+    margin: 0;
+    position: sticky;
+}
+.preview-container {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    width: 100%;
+    overflow: hidden;
+}
+.btn{
+    width: 95%;
+    margin: 6px 8px;
+    padding: 0;
+    position: sticky;
+}
+section:first{
+    text-align: center;
+}
+td{
+    min-width: 30px;
+    text-align: start;
+    padding: 2px 8px;
+}
+td:not(tr:last-child){
+    border-left: 1px #ccc solid;
+}

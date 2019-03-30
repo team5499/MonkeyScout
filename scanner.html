@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Monkey Scan</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+  <script src="jquery-3.3.1.js"></script>
+  <link rel="stylesheet" href="scanner.css">
+</head>
+<body>
+  <div id='ui' class='sidebar'>
+    <section>
+      <button id="pause" onclick="toggleScanner(this)" class="btn">Stop Scanner</button>
+    </section>
+    <section>
+      <button id="download" onclick="exportToCSV(prompt('Enter Your File Name') + '.csv')" class="btn">Download Data</button>
+    </section>
+    <section>
+      <h2>Data</h2>
+      <table class="table" id="table">
+      </table>
+    </section>
+  </div>
+  <div class="preview-container">
+    <video id="preview"></video>
+  </div>
+  <script src="instascan.min.js"></script>
+  <script src="scanner.js"></script>
+  <script src="jquery.csv.min.js"></script>
+</body>
+</html>
